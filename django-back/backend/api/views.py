@@ -15,7 +15,7 @@ class UserViewSet(viewsets.ModelViewSet):
 
     @action(detail=False, methods=['post'], permission_classes=[AllowAny])
     def register(self, request):
-        serializer = RegisterSerializer(data=request.data)  # Используем RegisterSerializer
+        serializer = RegisterSerializer(data=request.data)  
         if serializer.is_valid():
             user = serializer.save()
             token, created = Token.objects.get_or_create(user=user)

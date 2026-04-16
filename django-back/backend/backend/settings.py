@@ -22,9 +22,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'django-insecure-@efq@7nuz593u0xq&42wy4&3r(e&l)$_myt%@$v@yqt)am$#3$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['georgiy.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -162,4 +162,8 @@ CORS_ALLOW_HEADERS = [
     "user-agent",
     "x-csrftoken",
     "x-requested-with",
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:8080",
 ]

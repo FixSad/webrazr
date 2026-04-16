@@ -108,7 +108,7 @@
         <div class="form-row">
           <div class="nice-form-group">
             <label for="sport">Занимаюсь спортом</label>
-            <textarea id="sport" v-model="user.diseases" placeholder="Укажите виды спорта (если занимаетесь)" rows="2"></textarea>
+            <textarea id="sport" v-model="user.sport" placeholder="Укажите виды спорта (если занимаетесь)" rows="2"></textarea>
           </div>
           <div class="nice-form-group">
             <label for="diseases">Заболевания</label>

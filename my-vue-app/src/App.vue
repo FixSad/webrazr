@@ -1,18 +1,15 @@
 <template>
   <div id="app">
-    <!-- Мобильная навигация (гамбургер меню) -->
     <nav v-if="$route.path !== '/login' && $route.path !== '/register'" class="main-navigation">
       <div class="nav-container">
         <div class="logo">
           <h1>Когнитивные тесты</h1>
         </div>
         
-        <!-- Кнопка бургер-меню для мобильных устройств -->
         <button class="menu-toggle" @click="mobileMenuOpen = !mobileMenuOpen">
           <span class="menu-icon"></span>
         </button>
         
-        <!-- Навигационные ссылки - скрываются на мобильных, выводятся с помощью меню -->
         <div class="nav-links" :class="{ 'show-mobile-menu': mobileMenuOpen }">
           <router-link to="/" exact @click="mobileMenuOpen = false">Главная</router-link>
           <router-link to="/tests" @click="mobileMenuOpen = false">Мои тесты</router-link>

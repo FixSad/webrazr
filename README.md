@@ -69,7 +69,7 @@ webrazr — это проект, разработанный для  для пр�
 ## 📌 Установка
 1. Клонируйте репозиторий:
 ```bash
-git clone https://github.com/uichyi/webProject.git](https://github.com/FixSad/webrazr.git
+git clone 
 ```
 2. Для удобства после клонирования гита, открыть 2 окна VScode:
     в одном открыть django-back, во втором открытьme-vue-app
